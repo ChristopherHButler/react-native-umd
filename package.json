@@ -108,11 +108,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ChristopherHButler/canvas-sketch-util"
+    "url": "https://github.com/ChristopherHButler/react-native-umd"
   },
-  "homepage": "https://github.com/ChristopherHButler/canvas-sketch-util",
+  "homepage": "https://github.com/ChristopherHButler/react-native-umd",
   "bugs": {
-    "url": "https://github.com/ChristopherHButler/canvas-sketch-util/issues"
+    "url": "https://github.com/ChristopherHButler/react-native-umd/issues"
   },
   "license": "MIT"
 }
