@@ -1,5 +1,5 @@
 {
-  "version": "0.17.8",
+  "version": "0.17.9",
   "name": "react-native-umd",
   "main": "./packages/react-native-web/dist/index.js",
   "browser": "./packages/react-native-web/dist/umd/index.umd.js",
@@ -87,7 +87,7 @@
     "url": "https://github.com/ChristopherHButler"
   },
   "files": [
-    "./packages/react-native-web/dist/umd"
+    "packages/react-native-web/dist/umd"
   ],
   "repository": {
     "type": "git",
