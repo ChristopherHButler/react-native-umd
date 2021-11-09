@@ -1,6 +1,7 @@
 {
-  "version": "0.17.7",
+  "version": "0.17.8",
   "name": "react-native-umd",
+  "main": "./packages/react-native-web/dist/index.js",
   "browser": "./packages/react-native-web/dist/umd/index.umd.js",
   "scripts": {
     "clean": "del-cli ./packages/*/dist",
@@ -9,21 +10,7 @@
     "compile:es": "cd packages/react-native-web && babel --root-mode upward src --out-dir dist --ignore \"**/__tests__\"",
     "compile:flow": "gen-flow-files packages/react-native-web/src --out-dir packages/react-native-web/dist",
     "build:umd": "NODE_ENV=production rollup --config",
-    "benchmarks": "cd packages/benchmarks && yarn dev",
-    "benchmarks:build": "cd packages/benchmarks && yarn build",
-    "benchmarks:release": "yarn benchmarks:build && git checkout gh-pages && rm -rf ./docs/benchmarks && mv packages/benchmarks/dist ./docs/benchmarks && git add -A && git commit -m \"Deploy benchmarks\" && git push origin gh-pages && git checkout -",
-    "docs": "cd packages/docs && yarn dev",
-    "docs:build": "cd packages/docs && yarn build",
-    "docs:release": "yarn docs:build && git checkout gh-pages && rm -rf ./docs && mv packages/docs/dist ./docs && git add ./docs && git commit -m \"Deploy documentation\" && git push origin gh-pages && git checkout -",
-    "examples": "cd packages/examples && yarn dev",
-    "examples:build": "cd packages/examples && yarn build",
-    "flow": "flow",
-    "fmt": "prettier --write \"**/*.js\"",
-    "fmt:report": "prettier --check \"**/*.js\"",
-    "jest": "jest --config ./scripts/jest/config.js",
-    "lint": "yarn lint:report --fix",
-    "lint:report": "eslint packages scripts",
-    "prerelease": "npm run compile && npm run build:umd"
+    "prepublish": "npm run compile && npm run build:umd"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.13",
