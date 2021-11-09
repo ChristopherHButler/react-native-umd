@@ -1,5 +1,4 @@
 {
-  "private": true,
   "version": "0.17.5",
   "name": "react-native-umd",
   "browser": "./packages/react-native-web/dist/umd/index.umd.js",
