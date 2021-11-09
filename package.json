@@ -1,5 +1,5 @@
 {
-  "version": "0.17.5",
+  "version": "0.17.6",
   "name": "react-native-umd",
   "browser": "./packages/react-native-web/dist/umd/index.umd.js",
   "scripts": {
@@ -23,10 +23,7 @@
     "jest": "jest --config ./scripts/jest/config.js",
     "lint": "yarn lint:report --fix",
     "lint:report": "eslint packages scripts",
-    "prerelease": "yarn test && yarn compile && yarn build:umd",
-    "release": "node ./scripts/release/publish.js",
-    "postrelease": "yarn docs:release && yarn benchmarks:release",
-    "test": "yarn flow && yarn lint:report && yarn jest --runInBand"
+    "prerelease": "yarn compile && yarn build:umd"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.13",
