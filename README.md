@@ -4,6 +4,11 @@
 
 "React Native for Web" makes it possible to run [React Native][react-native-url] components and APIs on the web using React DOM.
 
+## Clone
+
+This package is a clone of [https://github.com/necolas/react-native-web](https://github.com/necolas/react-native-web) specifically to provide a umd build.
+
+
 ## Documentation
 
 The [documentation site](https://necolas.github.io/react-native-web/) covers installation, guides, and APIs.
