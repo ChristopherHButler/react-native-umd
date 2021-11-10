@@ -22,6 +22,7 @@ const config = {
     commonjs(), // To use CommonJS syntax
     json(),     // To import json
   ],
+  external: ['react', 'react-is', 'react-dom']
 };
 
 // Set the environment variable before you run the build command:

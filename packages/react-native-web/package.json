@@ -7,6 +7,7 @@
   "description": "React Native for Web",
   "module": "dist/index.js",
   "main": "dist/cjs/index.js",
+  "browser": "dist/umd/index.umd.js",
   "sideEffects": false,
   "files": [
     "dist",
@@ -28,11 +29,15 @@
     "react": ">=17.0.1",
     "react-dom": ">=17.0.1"
   },
-  "author": "Nicolas Gallagher",
+  "author": {
+    "name": "Christopher Butler",
+    "email": "christopher.harold.butler@gmail.com",
+    "url": "https://github.com/ChristopherHButler"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/necolas/react-native-web.git"
+    "url": "https://github.com/ChristopherHButler/react-native-umd"
   },
   "tags": [
     "react"
